@@ -1,6 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   const inputs = document.querySelectorAll('.code');
 
+  // Set focus on the first input when the page loads
+  inputs[0].focus();
+
   inputs.forEach((input, index) => {
     input.addEventListener('input', (e) => {
       const value = e.target.value;
